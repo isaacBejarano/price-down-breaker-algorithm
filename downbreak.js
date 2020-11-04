@@ -25,7 +25,7 @@ function downbreak(change) {
 	// 1. target(change) must be bigger than smallest coin and have max 2 decimals
 	if (change < MONEY[MONEY.length - 1] || change != change.toFixed(2)) {
 		invalidToString(
-			"canvi inexistent, o massa petit o amb massa decimals per ser computable"
+			"change unexistent or too small or with too many decimals to be computed"
 		);
 	} else {
 		// 2. downbreak
@@ -57,7 +57,7 @@ function invalidToString(output) {
 }
 
 function validToString(result, MONEY) {
-	let template = "<h3>Canvi desglossat</h3>";
+	let template = "<h3>broken down change</h3>";
 
 	// diplay only truthy
 	for (let i = 0; i < result.length; i++) {
