@@ -1,0 +1,74 @@
+body {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto auto;
+  background-color: gainsboro;
+  box-shadow: 0px 1px 3px 0px grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+/* header */
+hgroup {
+  padding: 10px 15px;
+  background-color: lightgreen;
+  box-shadow: inset 0px 0px 6px 0px seagreen;
+}
+h1,
+h2 {
+  margin: 0;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  text-align: justify;
+  padding-right: 195px;
+}
+
+/* main */
+main {
+  background-color: whitesmoke;
+}
+p {
+  margin: 0;
+  padding: 30px 0 30px 30px;
+  font-size: 14px;
+  color: dimgray;
+}
+fieldset {
+  margin: 0 30px;
+  padding: 15px;
+  border: 1px solid darkgray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+input {
+  margin-bottom: 15px;
+}
+.outlet-default {
+  margin-top: 30px;
+  user-select: text;
+  font-size: 18px;
+  padding: 15px 30px;
+  /* dynamic default */
+  color: transparent;
+  background-color: rgba(211, 211, 211, 0.506);
+  outline: 1px solid darkgray;
+}
+code span {
+  font-size: 16px;
+}
+
+/* dynamic class */
+.valid {
+  color: #634a0c;
+  background-color: lightgreen;
+  outline: 1px solid seagreen;
+}
+.invalid {
+  color: crimson;
+  background-color: pink;
+  outline: 1px solid crimson;
+}
